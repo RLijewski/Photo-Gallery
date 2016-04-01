@@ -1,0 +1,93 @@
+/**************
+* Base Styles *
+**************/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 390px;
+  margin: auto;
+  padding-top: 103px;
+}
+
+.flex {
+  display: flex;
+}
+
+.search-bar {
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+#search {
+  width: 390px;
+  font-size: 16pt;
+  font-weight: lighter;
+  padding: 10px;
+  border: solid 2px #eff0f1;
+  border-radius: 5px;
+}
+
+#search:focus {
+  border-color: #46698b;
+  outline: none;
+}
+
+.photo-gallery {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 192.5px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 490px) {
+  .container {
+    width: 430px;
+  }
+
+  #search {
+    width: 430px;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .container {
+    width: 720px;
+  }
+
+  #search {
+    width: 460px;
+  }
+
+  img {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 980px;
+  }
+}
