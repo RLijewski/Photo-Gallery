@@ -25,7 +25,7 @@
   width: 100%;
 }
 
-#search {
+.search {
   width: 390px;
   font-size: 16pt;
   font-weight: lighter;
@@ -34,7 +34,7 @@
   border-radius: 5px;
 }
 
-#search:focus {
+.search:focus {
   border-color: #46698b;
   outline: none;
 }
@@ -50,8 +50,21 @@ img {
   margin-bottom: 0px;
 }
 
+.rebox {
+  background: rgba(56, 56, 56, 0.97);
+}
+
+.rebox-caption {
+  left: calc((100vw - 55%) / 2);
+  bottom: 5%;
+  width: 55%;
+  background: none;
+}
+
 .rebox-caption p {
   font-size: .75em;
+  max-width: 90%;
+  font-weight: lighter;
 }
 
 
@@ -65,7 +78,7 @@ img {
     width: 430px;
   }
 
-  #search {
+  .search {
     width: 430px;
   }
 
@@ -87,7 +100,7 @@ img {
     width: 720px;
   }
 
-  #search {
+  .search {
     width: 460px;
   }
 
